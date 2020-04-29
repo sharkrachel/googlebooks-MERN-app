@@ -9,7 +9,8 @@ export default function ListItem(props) {
 
                     <div className="row mt-5">
                         <div className="col-md-3">
-                            <img src={book.volumeInfo.imageLinks.thumbnail} />
+                        
+                            <img src={(book.volumeInfo.imageLinks) ? book.volumeInfo.imageLinks.thumbnail : "https://placehold.it/300x300"} />
                         </div>
 
                         <div className="col-md-7 text-left">
